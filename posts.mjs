@@ -92,7 +92,7 @@ const make_post = (post_id) => {
     </tr></table><p id="button_close" onclick="hide_post()">Fechar</p></div>
     <div id="full_text">
         <img id="full_image" src="./images/${post.image}" 
-            alt="${post.title}" title='clique' onclick='image_click()'>
+            alt="${post.title}" title='clique para zoom in' onclick='image_click()'>
         <p>${post.text}
         </p>
     </div>`;
@@ -113,6 +113,7 @@ export const imageClick = () => {
     let lightbox = document.getElementById("lightbox");
     let clone = document.getElementById("full_image").cloneNode();
     clone.className = "";
+    clone.title = "clique para zoom out";
     lightbox.innerHTML = "";
     lightbox.appendChild(clone);
     lightbox.className = "show";
