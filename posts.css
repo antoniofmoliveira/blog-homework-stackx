@@ -18,13 +18,27 @@ body {
     cursor: pointer;
     color: yellowgreen;
 }
-#menu {
-    text-align: right;
-    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-    font-size: 1.5rem;
-    padding: 1rem;
-    padding-top: 1.5rem;
-    color: lightblue;
+@media (min-width: 600px) {
+    #menu {
+        text-align: right;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        font-size: 1.5rem;
+        padding: 1rem;
+        padding-top: 1.5rem;
+        color: lightblue;
+        margin-right: 1.5rem;
+    }
+}
+@media (max-width: 600px) {
+    #menu {
+        text-align: right;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        font-size: 1rem;
+        padding: 1rem;
+        padding-top: 1.5rem;
+        margin-right: 1.5rem;
+        color: lightblue;
+    }
 }
 .menu_item:hover {
     color: lawngreen;
