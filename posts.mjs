@@ -91,7 +91,8 @@ const make_post = (post_id) => {
         <td>${post.qt_views} views</td>
     </tr></table><p id="button_close" onclick="hide_post()">Fechar</p></div>
     <div id="full_text">
-        <img id="full_image" src="./images/${post.image}" alt="">
+        <img id="full_image" src="./images/${post.image}" 
+            alt="${post.title}" title='clique' onclick='image_click()'>
         <p>${post.text}
         </p>
     </div>`;
@@ -106,12 +107,32 @@ const make_grid = () => {
 };
 
 /**
+ * lightbox effect
+ */
+export const imageClick = () => {
+    let lightbox = document.getElementById("lightbox");
+    let clone = document.getElementById("full_image").cloneNode();
+    clone.className = "";
+    lightbox.innerHTML = "";
+    lightbox.appendChild(clone);
+    lightbox.className = "show";
+};
+
+/**
+ * close ligthbox
+ */
+export const lightboxClick = () => {
+    lightbox.className = "";
+};
+
+/**
  * exposes exported module functions to window
  */
 window.filter_posts = filterPosts;
 window.show_post = showPost;
 window.hide_post = hidePost;
-
+window.image_click = imageClick;
+window.lightbox_click = lightboxClick;
 /**
  * starts
  */
