@@ -1,0 +1,157 @@
+body {
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+#bar {
+    background-color: green;
+    height: 5rem;
+    display: grid;
+    grid-template-columns: 5rem 90%;
+}
+#logo {
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-size: 3rem;
+    padding: 0.5rem;
+    color: gold;
+}
+#logo:hover {
+    cursor: pointer;
+    color: yellowgreen;
+}
+#menu {
+    text-align: right;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-size: 1.5rem;
+    padding: 1rem;
+    padding-top: 1.5rem;
+    color: lightblue;
+}
+.menu_item:hover {
+    color: lawngreen;
+    cursor: pointer;
+}
+#cards {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 1rem;
+}
+
+.card {
+    display: block;
+    border: 2px;
+    box-shadow: 5px 5px gray;
+    border-radius: 5%;
+    width: 300px;
+    min-width: 300px;
+    height: 500px;
+    background-color: yellow;
+    margin: 1rem;
+}
+
+.card:hover {
+    cursor: pointer;
+    background-color: cadetblue;
+}
+
+.card_title {
+    width: 90%;
+    height: 3rem;
+    text-align: center;
+    padding-top: 1rem;
+    padding-left: 1rem;
+    padding-right: 2rem;
+    font-size: 1.5rem;
+}
+
+.card_photo {
+    width: 250px;
+    height: 250px;
+    background-color: black;
+    margin: 1.5rem;
+    border-radius: 10%;
+}
+
+.card_text {
+    margin: 1.5rem;
+    font-size: 1rem;
+}
+
+.card_foot {
+    width: 100%;
+}
+.card_foot table {
+    width: 100%;
+}
+.card_foot table td {
+    width: 33%;
+    text-align: center;
+    font-size: 0.8rem;
+}
+.branco {
+    background-color: whitesmoke;
+}
+.amarelo {
+    background-color: lightyellow;
+}
+
+.azul {
+    background-color: lightblue;
+}
+.panorama {
+    background-color: lightgreen;
+}
+.macro {
+    background-color: lightcyan;
+}
+
+#full_post {
+    position: absolute;
+    /* background-color: blue; */
+    width: 85%;
+    min-width: 400px;
+    height: 85%;
+    top: 100px;
+    left: 100px;
+    display: none;
+}
+
+#full_title {
+    font-size: 2rem;
+    padding: 5px;
+    width: 100%;
+    text-align: center;
+}
+#full_text {
+    display: flex;
+    font-size: 1.5rem;
+    padding: 50px;
+    padding-top: 10px;
+    width: 92%;
+    text-align: justify;
+}
+#full_image {
+    padding: 10px;
+    margin-top: 15px;
+    width: 250px;
+    height: 250px;
+}
+#full_detail {
+    display: flex;
+    margin-top: 20px;
+    width: 100%;
+}
+#full_detail table {
+    width: 100%;
+}
+#full_detail td {
+    width: 33%;
+    text-align: center;
+}
+#button_close {
+    color: blue;
+}
+#button_close:hover {
+    cursor: pointer;
+    color: red;
+}
