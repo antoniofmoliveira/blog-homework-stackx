@@ -69,7 +69,7 @@ const toggle_cards = () => {
 const get_card = (post) => {
     return `<div class="card ${post.categorie}" onclick="show_post(${post.id})">
     <div class="card_title">${post.title.slice(0, 30)}...</div>
-    <img class="card_photo" src='./images/${post.id}.jpeg' />
+    <img class="card_photo" src='./images/${post.id}.jpg' />
     <div class="card_text">${post.text.slice(0, 80)}...</div>
     <div class="card_foot"><table><tr><td>${post.date}</td><td>Categoria:<br> ${
         post.categorie

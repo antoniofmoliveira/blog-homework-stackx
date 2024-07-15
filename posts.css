@@ -6,7 +6,7 @@ body {
     background-color: green;
     height: 5rem;
     display: grid;
-    grid-template-columns: 5rem 90%;
+    grid-template-columns: 12rem 80%;
 }
 #logo {
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
@@ -102,21 +102,15 @@ body {
     text-align: center;
     font-size: 0.8rem;
 }
-.branco {
+.software {
     background-color: whitesmoke;
 }
-.amarelo {
+.redes {
     background-color: lightyellow;
 }
 
-.azul {
+.malware {
     background-color: lightblue;
-}
-.panorama {
-    background-color: lightgreen;
-}
-.macro {
-    background-color: lightcyan;
 }
 
 #full_post {
@@ -195,6 +189,6 @@ body {
     width: 100%;
     height: auto;
     /* contain | cover | fill | scale-down */
-    object-fit: scale-down;
+    object-fit: fill;
     cursor: zoom-out;
 }
