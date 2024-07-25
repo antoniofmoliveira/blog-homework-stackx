@@ -1,27 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Importing JavaScript module -->
     <script type="module" src="posts.mjs"></script>
-    <link rel="stylesheet" href="posts.css">
+
+    <!-- Importing CSS styles -->
+    <link rel="stylesheet" href="posts.css" />
+
+    <!-- Setting the title of the webpage -->
     <title>Blog StackX - Flora</title>
-</head>
+  </head>
 
-<body>
+  <body>
+    <!-- Navigation bar -->
     <div id="bar">
-        <div id="logo" onclick="filter_posts('')">FloraTec</div>
-        <div id="menu">
-            <span class="menu_item" onclick="filter_posts('software')">Software</span>
-            <span class="menu_item" onclick="filter_posts('redes')">Redes</span>
-            <span class="menu_item" onclick="filter_posts('malware')">Malwares</span>
-        </div>
-    </div>
-    <div id="cards"></div>
-    <div id="full_post"></div>
-    <div id="lightbox" onclick="lightbox_click()"></div>
-    </div>
-</body>
+      <!-- Logo with onclick event handler to filter posts by category -->
+      <div id="logo" onclick="filter_posts('')">FloraTec</div>
 
+      <!-- Menu with onclick event handlers to filter posts by category -->
+      <div id="menu">
+        <span class="menu_item" onclick="filter_posts('software')"
+          >Software</span
+        >
+        <span class="menu_item" onclick="filter_posts('redes')">Redes</span>
+        <span class="menu_item" onclick="filter_posts('malware')"
+          >Malwares</span
+        >
+      </div>
+    </div>
+
+    <!-- Container for cards -->
+    <div id="cards"></div>
+
+    <!-- Container for full post exhibition -->
+    <div id="full_post"></div>
+
+    <!-- Container for lightbox -->
+    <div id="lightbox" onclick="lightbox_click()"></div>
+  </body>
 </html>
